@@ -1,0 +1,19 @@
+body{
+    padding-left: 200px;
+}
+
+.chatBox{
+    border:1px solid black;
+    height: 500px;
+    width: 700px;
+    background-color:powderblue;
+    padding: 10px 10px
+}
+
+.chatMessageDiv{
+    border:1px solid black;
+    height: 30px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    background-color: white;
+}
