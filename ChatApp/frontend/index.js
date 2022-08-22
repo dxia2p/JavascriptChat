@@ -4,7 +4,12 @@ let sendButton = document.getElementById("sendButton");
 
 sendButton.addEventListener("click", sendMessage);
 
-const socket = io('https://vast-springs-01432.herokuapp.com/');
+const socket = io('https://vast-springs-01432.herokuapp.com/', {
+    withCredentials: true,
+    extraHeaders: {
+        "secretHeader": "secret value"
+    }
+});
 socket.on('connect', () => {
     displayMessage('You connected with id: ' + socket.id);
 });
