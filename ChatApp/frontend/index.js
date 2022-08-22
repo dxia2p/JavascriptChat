@@ -4,7 +4,7 @@ let sendButton = document.getElementById("sendButton");
 
 sendButton.addEventListener("click", sendMessage);
 
-const socket = io('http://localhost:3000');
+const socket = io('https://vast-springs-01432.herokuapp.com/');
 socket.on('connect', () => {
     displayMessage('You connected with id: ' + socket.id);
 });
