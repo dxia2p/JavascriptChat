@@ -6,7 +6,7 @@ const io = new Server(process.env.PORT || 3000, {
         allowedHeaders: ["my-custom-header"],
         credentials: true
     }
- });
+ })
 
 io.on("connection", (socket) => {
     console.log(socket.id);
