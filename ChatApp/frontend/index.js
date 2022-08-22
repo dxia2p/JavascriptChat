@@ -7,7 +7,7 @@ sendButton.addEventListener("click", sendMessage);
 const socket = io('https://vast-springs-01432.herokuapp.com/', {
     withCredentials: true,
     extraHeaders: {
-        "secretHeader": "secret value"
+      "my-custom-header": "abcd"
     }
 });
 socket.on('connect', () => {
