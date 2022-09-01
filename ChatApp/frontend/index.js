@@ -35,9 +35,11 @@ function displayMessage(message, username){
     chatBox.appendChild(div);
     div.className = 'chatMessageDiv';
     let usernameText = document.createElement("p");
+    usernameText.classList.add('usernameText');
     usernameText.innerHTML = username;
     div.appendChild(usernameText);
     let messageText = document.createElement("p");
+    messageText.classList.add('messageText');
     messageText.innerHTML = message;
     div.appendChild(messageText);
 }

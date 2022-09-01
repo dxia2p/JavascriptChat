@@ -17,3 +17,13 @@ body{
     padding-left: 5px;
     background-color: white;
 }
+
+.usernameText{
+    font-size: x-small;
+    margin-bottom: 0px;
+    text-decoration: underline;
+}
+.messageText{
+    margin-top: 0px;
+    padding-top: 0px;
+}
