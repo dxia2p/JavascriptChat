@@ -7,7 +7,9 @@ body{
     height: 500px;
     width: 700px;
     background-color:powderblue;
-    padding: 10px 10px
+    padding: 10px 10px;
+    border-radius: 5px;
+    overflow: scroll;
 }
 
 .chatMessageDiv{
