@@ -10,7 +10,7 @@ const io = new Server(process.env.PORT || 3000, {
 
 io.on("connection", (socket) => {
     console.log(socket.id);
-    socket.on('sendMessage', (message) =>{
-        io.emit('recieveMessage', message);
+    socket.on('sendMessage', (message, username) =>{
+        io.emit('recieveMessage', message, username);
     });
 });
